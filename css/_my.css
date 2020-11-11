@@ -1,0 +1,18 @@
+.my_img{
+	/* width: 120px; */
+	position: relative;
+}
+.my_img img{
+	width: 120px;
+	height: 120px;
+	position: absolute;   /* 要插入的图片绝对定位 不是标准流 */
+	left: 0px;   /* 以大盒子为准对齐 */
+	top: -96px;
+	display: none;  
+}
+.my_img:hover{
+	width: 120px;
+}
+.my_img:hover img{/* 鼠标经过 显示的内容 */
+  display: block;   /* 转换成块级元素 */
+}
